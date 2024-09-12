@@ -1,0 +1,109 @@
+{
+  "globals": {
+    "languages": {
+      "en-US": "Angielski",
+      "pl-PL": "Polski",
+      "de-DE": "Niemiecki"
+    },
+    "formValidation": {
+      "wrongEmail": "Podaj poprawny email!",
+      "shortPassword": "Hasło musi mieć co najmniej 8 znaków!",
+      "longPassword": "Hasło nie może być dłuższe niż 24 znaki!",
+      "capitalLetterInPassword": "Hasło musi zawierać co najmniej jedną wielką literę!",
+      "numberInPassword": "Hasło musi zawierać co najmniej jedną cyfrę!",
+      "specialCharInPassword": "Hasło musi zawierać co najmniej jeden znak specjalny!",
+      "differentPasswords": "Podane hasła nie są takie same!",
+      "userAlreadtExists": "Użytkownik o takim emailu już istnieje!",
+      "loginFailed": "Nie udało się zalogować"
+    },
+    "petInfo": {
+      "male": "samiec",
+      "female": "samica",
+      "young": "młody",
+      "adult": "dorosły",
+      "senior": "senior"
+    },
+    "activityLevels": {
+      "calm": "Spokojna",
+      "moderate": "Umiarkowana",
+      "active": "Aktywny",
+      "veryActive": "Bardzo aktywny"
+    },
+    "status": {
+      "forAdoption": "Do adopcji",
+      "adopted": "Adoptowany"
+    },
+    "gender": {
+      "male": "Samiec",
+      "female": "Samica"
+    },
+    "layout": {
+      "logout": "Wyloguj",
+      "nextPage": "Następna strona",
+      "previousPage": "Poprzednia strona",
+      "forAdoption": "do adopcji",
+      "termsOfService": "Regulamin",
+      "contact": "Kontakt",
+      "privacyPolicy": "Polityka prywatności",
+      "seeMore": "Zobacz więcej",
+      "addPet": "Dodaj zwierzaka",
+      "search": "Wyszukaj",
+      "profile": "Profil"
+    },
+    "age": {
+      "young": "Młody",
+      "adult": "Dorosły",
+      "senior": "Senior"
+    },
+    "spieces": {
+      "dog": "Pies",
+      "cat": "Kot",
+      "horse": "Koń",
+      "fish": "Ryba",
+      "dogs": "Psy",
+      "cats": "Koty",
+      "horses": "Konie",
+      "fishes": "Ryby"
+    },
+    "activity": {
+      "calm": "Spokojny",
+      "moderate": "Umiarkowany",
+      "active": "Aktywny",
+      "veryActive": "Bardzo aktywny"
+    },
+    "errors": {
+      "petInfoNotFound": "Nie znaleziono zwierzęcia"
+    },
+    "buttons": {
+      "send": "Wyślij"
+    },
+    "form": {
+      "name": "Wprowadź swoje imię",
+      "surname": "Wprowadź swoje nazwisko",
+      "email": "Wprowadź swój email",
+      "password": "Wprowadź swoje hasło",
+      "password2": "Powtórz hasło",
+      "phone": "Wprowadź swój numer telefonu",
+      "address": "Wprowadź swój adres",
+      "register": "Zarejestruj się",
+      "login": "Zaloguj się",
+      "diffPasswords": "Hasła są różne",
+      "addPet": {
+        "name": "Imię zwierzęcia",
+        "city": "Wybierz miasto",
+        "status": "Wybierz status",
+        "spiece": "Wybierz gatunek",
+        "breed": "Wpisz rasę",
+        "gender": "Wybierz płeć",
+        "age": "Wybierz wiek",
+        "activity": "Wybierz poziom aktywności",
+        "description": "Wpisz opis",
+        "address": "Wpisz adres",
+        "addAvatar": "Dodaj avatar",
+        "addAdditionalPhotos": "Dodaj dodatkowe zdjęcia",
+        "chooseFile": "Wybierz plik",
+        "chooseFiles": "Wybierz pliki"
+      }
+    }
+  }
+}

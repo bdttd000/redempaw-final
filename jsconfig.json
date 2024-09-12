@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/pages/*": ["./src/app/pages/*"],
+      "@/redux/*": ["./src/lib/redux/*"],
+      "@/prisma/*": ["./src/lib/prisma/*"],
+      "@/components/*": ["./src/app/components/*"],
+      "@/constants/*": ["./src/app/constants/*"],
+      "@/utils/*": ["./src/app/utils/*"],
+      "@/public/*": ["./public/*"]
+    }
+  },
+  "include": ["next-env.d.js", "**/*.js", "**/*.js"],
+  "exclude": ["node_modules"]
+}

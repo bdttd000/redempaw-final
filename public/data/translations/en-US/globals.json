@@ -1,0 +1,109 @@
+{
+  "globals": {
+    "languages": {
+      "en-US": "English",
+      "pl-PL": "Polish",
+      "de-DE": "German"
+    },
+    "formValidation": {
+      "wrongEmail": "Please enter a valid email!",
+      "shortPassword": "Password must be at least 8 characters long!",
+      "longPassword": "Password cannot be longer than 24 characters!",
+      "capitalLetterInPassword": "Password must contain at least one uppercase letter!",
+      "numberInPassword": "Password must contain at least one digit!",
+      "specialCharInPassword": "Password must contain at least one special character!",
+      "differentPasswords": "The passwords do not match!",
+      "userAlreadyExists": "A user with this email already exists!",
+      "loginFailed": "Login failed"
+    },
+    "petInfo": {
+      "male": "male",
+      "female": "female",
+      "young": "young",
+      "adult": "adult",
+      "senior": "senior"
+    },
+    "activityLevels": {
+      "calm": "Calm",
+      "moderate": "Moderate",
+      "active": "Active",
+      "veryActive": "Very Active"
+    },
+    "status": {
+      "forAdoption": "For Adoption",
+      "adopted": "Adopted"
+    },
+    "gender": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "age": {
+      "young": "Young",
+      "adult": "Adult",
+      "senior": "Senior"
+    },
+    "activity": {
+      "calm": "Calm",
+      "moderate": "Moderate",
+      "active": "Active",
+      "veryActive": "Very Active"
+    },
+    "layout": {
+      "logout": "Log out",
+      "nextPage": "Next page",
+      "previousPage": "Previous page",
+      "forAdoption": "for adoption",
+      "termsOfService": "Terms of Service",
+      "contact": "Contact",
+      "privacyPolicy": "Privacy Policy",
+      "seeMore": "See more",
+      "addPet": "Add a pet",
+      "search": "Search",
+      "profile": "Profile"
+    },
+    "spieces": {
+      "dog": "Dog",
+      "cat": "Cat",
+      "horse": "Horse",
+      "fish": "Fish",
+      "dogs": "Dogs",
+      "cats": "Cats",
+      "horses": "Horses",
+      "fishes": "Fishes"
+    },
+    "errors": {
+      "petInfoNotFound": "Pet not found"
+    },
+    "buttons": {
+      "send": "Send"
+    },
+    "form": {
+      "name": "Enter your first name",
+      "surname": "Enter your last name",
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "password2": "Repeat your password",
+      "phone": "Enter your phone number",
+      "address": "Enter your address",
+      "register": "Register",
+      "login": "Login",
+      "diffPasswords": "Passwords do not match",
+      "addPet": {
+        "name": "Enter pet's name",
+        "city": "Select city",
+        "status": "Select status",
+        "spiece": "Select species",
+        "breed": "Enter breed",
+        "gender": "Select gender",
+        "age": "Select age",
+        "activity": "Select activity level",
+        "description": "Enter description",
+        "address": "Enter address",
+        "addAvatar": "Add avatar",
+        "addAdditionalPhotos": "Add additional photos",
+        "chooseFile": "Choose file",
+        "chooseFiles": "Choose files"
+      }
+    }
+  }
+}

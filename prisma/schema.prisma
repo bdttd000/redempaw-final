@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  user_id       String    @id @default(uuid())
+  privilege_id  Int
+  privilege     privilege @relation(fields: [privilege_id], references: [privilege_id])
+  user_info_id  String    @unique
+  user_info     user_info @relation(fields: [user_info_id], references: [user_info_id])
+  email         String    @unique
+  password      String
+  enabled       Boolean   @default(true)
+  creation_date DateTime  @default(now())
+  pet           pet[]
+}
+
+model user_info {
+  user_info_id String @id @default(uuid())
+  name         String
+  surname      String
+  phone        String
+  address      String
+  user         users?
+}
+
+model privilege {
+  privilege_id Int     @id @default(autoincrement())
+  name         String
+  user         users[]
+}
+
+model pet {
+  pet_id        String     @id @default(uuid())
+  user_id       String
+  user          users      @relation(fields: [user_id], references: [user_id])
+  pet_info_id   String     @unique
+  pet_info      pet_info   @relation(fields: [pet_info_id], references: [pet_info_id])
+  active        Boolean    @default(true)
+  creation_date DateTime   @default(now())
+  update_date   DateTime   @updatedAt
+  pet_city      pet_city[]
+}
+
+model pet_info {
+  pet_info_id   String   @id @default(uuid())
+  name          String
+  description   String
+  directory_url String   @default(uuid())
+  avatar_url    String   @default(uuid())
+  status_id     Int
+  status        status   @relation(fields: [status_id], references: [status_id])
+  activity_id   Int
+  activity      activity @relation(fields: [activity_id], references: [activity_id])
+  age_id        Int
+  age           age      @relation(fields: [age_id], references: [age_id])
+  breed         String
+  spiece_id     Int
+  spiece        spiece   @relation(fields: [spiece_id], references: [spiece_id])
+  gender_id     Int
+  gender        gender   @relation(fields: [gender_id], references: [gender_id])
+  photos        photo[]
+  pet           pet?
+}
+
+model spiece {
+  spiece_id Int        @id @default(autoincrement())
+  name      String     @unique
+  pet_info  pet_info[]
+}
+
+model status {
+  status_id Int        @id @default(autoincrement())
+  name      String     @unique
+  pet_info  pet_info[]
+}
+
+model activity {
+  activity_id Int        @id @default(autoincrement())
+  name        String     @unique
+  pet_info    pet_info[]
+}
+
+model age {
+  age_id   Int        @id @default(autoincrement())
+  name     String     @unique
+  pet_info pet_info[]
+}
+
+model gender {
+  gender_id Int        @id @default(autoincrement())
+  name      String     @unique
+  pet_info  pet_info[]
+}
+
+model photo {
+  photo_id    String   @id @default(uuid())
+  pet_info_id String
+  pet_info    pet_info @relation(fields: [pet_info_id], references: [pet_info_id])
+  photo_url   String   @default(uuid())
+}
+
+model city {
+  city_id  Int        @id @default(autoincrement())
+  name     String
+  pet_city pet_city[]
+}
+
+model pet_city {
+  pet_id  String
+  pet     pet    @relation(fields: [pet_id], references: [pet_id])
+  city_id Int
+  city    city   @relation(fields: [city_id], references: [city_id])
+
+  @@id([pet_id, city_id])
+}

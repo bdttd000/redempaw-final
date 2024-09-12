@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 238, 226, 223;
+    --background-end-rgb: 238, 215, 197;
+
+    --primary-color: #b36a5e;
+    --secondary-color: #5a3934;
+    --layout-color: #262626;
+    --secondary-color-light: #c97c5d;
+    --primary-color-light: #ebb098;
+    --logo-filter: invert(49%) sepia(15%) saturate(1358%) hue-rotate(321deg)
+      brightness(93%) contrast(85%);
+    --white-filter: invert(100%) sepia(100%) saturate(27%) hue-rotate(97deg)
+      brightness(107%) contrast(107%);
+    --text-primary: #fff;
+    --text-secondary: var(--primary-color);
+    --main-max-width: 1500px;
+
+    --pageSection-primary: #eed7c5;
+    --pageSection-secondary: #c97c5d;
+
+    --main-bg: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+  background-color: var(--pageSection-primary);
+}
+
+.logo-filter {
+  filter: var(--logo-filter);
+}
+
+.primary-bg {
+  background-color: var(--background-color-primary);
+}
+
+.primary-bg-light {
+  background-color: var(--pageSection-primary);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.light-bg {
+  background-color: var(--secondary-color-light);
+}
+
+.light-color {
+  color: var(--primary-color-light);
+}
+
+.brown-color {
+  color: var(--primary-color);
+}
+
+.input-font {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.grey-bg {
+  background-color: var(--layout-color);
+}
+
+.border-color-brown {
+  border-color: var(--primary-color);
+}
+
+.icon-white {
+  filter: var(--white-filter);
+}
+
+.h-screen-minus-layout {
+  min-height: calc(100vh - 120px);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.main-max-width {
+  max-width: var(--main-max-width);
+  margin: auto;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-main {
+  background: var(--main-bg);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h6 {
+  font-size: 1rem; /* 16px */
+}
